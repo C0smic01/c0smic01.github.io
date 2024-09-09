@@ -1,13 +1,13 @@
 ---
 ---
 
-@import 'main';
+@import 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
 
 /* append your custom style below */
-pre {
-  tab-size: 2;
-}
-
 /* Apply the background image to the body or main container */
 body {
   background: url('/assets/img/WTbackground.png');

@@ -10,7 +10,7 @@ Whew! I finally got this blog up and running after migrating from Hugo. It took 
 {%
   include embed/video.html
   src='/assets/vid/Miracle.mp4'
-  types='ogg|mov'
+  types='mp4'
   autoplay=false
   loop=true
   muted=false

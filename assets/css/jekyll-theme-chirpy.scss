@@ -16,19 +16,19 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent image repetition */
 }
-footer {
-  background: rgba(0, 0, 0, 0.01); 
-  padding: 10px 20px; /* Add some padding */
-  position: relative;
-}
-/* Make the sidebar background transparent */
+// footer {
+//   background: rgba(0, 0, 0, 0.01); 
+//   padding: 10px 20px; /* Add some padding */
+//   position: relative;
+// }
+// /* Make the sidebar background transparent */
 #sidebar {
   background: none; /* No background, allowing the body image to show */
 }
 
-#sidebar ul li a {
-  background: rgba(0, 0, 0, 0.8); 
-}
+// #sidebar ul li a {
+//   background: rgba(0, 0, 0, 0.8); 
+// }
 
 /* Add a transparent overlay to the main wrapper */
 #main-wrapper {

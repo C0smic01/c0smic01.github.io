@@ -10,18 +10,16 @@ pre {
 
 /* Apply the background image to the body or main container */
 body {
-  background: url('/assets/img/Entei.png');
+  background: url('/assets/img/WTbackground.png');
   background-size: cover; /* Ensure the image covers the entire body */
   background-attachment: fixed; /* Fix the background so it doesn't scroll */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent image repetition */
 }
 footer {
-  background: rgba(0, 0, 0, 0.1); 
-  // color: #fff; /* Ensure text is visible */
-  // padding: 10px 20px; /* Add some padding */
-  // position: relative;
-  // z-index: 1; /* Ensure it appears above the background */
+  background: rgba(0, 0, 0, 0.01); 
+  padding: 10px 20px; /* Add some padding */
+  position: relative;
 }
 /* Make the sidebar background transparent */
 #sidebar {
@@ -30,12 +28,11 @@ footer {
 
 #sidebar ul li a {
   background: rgba(0, 0, 0, 0.8); 
-  color: #fff;
 }
 
 /* Add a transparent overlay to the main wrapper */
 #main-wrapper {
-  background: rgba(0, 0, 0, 0.9); /* Semi-transparent white background */
+  background: rgba(58, 58, 58, 0.8); /* Semi-transparent white background */
   position: relative;
   z-index: 1; /* Ensure content is above the background */
 }

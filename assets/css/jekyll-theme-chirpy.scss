@@ -8,9 +8,9 @@
 ';
 
 /* append your custom style below */
-/* Apply the background image to the body or main container */
+
 body {
-  background: url('/assets/img/WTbackground.png');
+  background: url('/assets/img/theme/Gloomy.jpg');
   background-size: cover; /* Ensure the image covers the entire body */
   background-attachment: fixed; /* Fix the background so it doesn't scroll */
   background-position: center; /* Center the image */
@@ -32,7 +32,7 @@ footer {
 
 /* Add a transparent overlay to the main wrapper */
 #main-wrapper {
-  background: rgba(58, 58, 58, 0.8); /* Semi-transparent white background */
+  background: rgba(43, 43, 43, 0.85); /* Semi-transparent white background */
   position: relative;
   z-index: 1; /* Ensure content is above the background */
 }

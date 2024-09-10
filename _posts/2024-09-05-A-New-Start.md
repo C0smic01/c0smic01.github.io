@@ -15,4 +15,4 @@ Whew! I finally got this blog up and running after migrating from Hugo. It took 
   autoplay=false
   loop=true
   muted=false
-%}
+%} 

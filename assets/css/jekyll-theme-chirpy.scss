@@ -36,3 +36,7 @@ footer {
   position: relative;
   z-index: 0; /* Ensure content is above the background */
 }
+
+#topbar-wrapper .nav-link.active {
+  background: rgba(43, 43, 43, 0.85); /* Match the main wrapper's opacity */
+}

@@ -11,6 +11,7 @@ Whew! I finally got this blog up and running after migrating from Hugo. It took 
   include embed/video.html
   src='/assets/vid/Miracle.mp4'
   types='mp4'
+  title='Upper bracket is still for bitches, you hear me Astril?'
   autoplay=false
   loop=true
   muted=false

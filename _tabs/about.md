@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-* I am **C0smic** or **Tùn** (for those who know me).
+* I am **C0smic** or **Tèo em** (for those who know me).
 * At the time of writing this, I'm an IT student at VNUHCM - University of Science and a member of [***HCMUS Computer Security Club***](https://web.facebook.com/hcmus.compsec.club).
 
 # Why this blog?

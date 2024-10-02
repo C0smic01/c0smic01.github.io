@@ -31,7 +31,7 @@ There are 3 states that a tracked file can be in Git:
 - `git commit --amend`: Modify the last commit (potentially dangerous 
 
 ## What is gitignore?
-`.gitignore` file is used to specify files and directories that should be ignored by Git. It is useful when you have files that you don't want to commit to the repository.
+`.gitignore` file is used to specify files and directories that should be ignored by Git. It is useful when you have files that you don't want to commit to the repository
 
 
 

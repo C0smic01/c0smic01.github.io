@@ -28,10 +28,10 @@ There are 3 states that a tracked file can be in Git:
 - `git status`: Show the working tree status.
 - `git log`: Show the commit logs.
 - `git rm --cached \<filename\>`: Remove a file from the staging area but keep it in the working directory.
-- `git commit --amend`: Modify the last commit (potentially dangerous 
+- `git commit --amend`: Modify the last commit (potentially dangerous if the commit has been pushed to a remote repository).
 
 ## What is gitignore?
-`.gitignore` file is used to specify files and directories that should be ignored by Git. It is useful when you have files that you don't want to commit to the repository
+`.gitignore` file is used to specify files and directories that should be ignored by Git. It is useful when you have files that you don't want to commit to the repository.
 
 
 

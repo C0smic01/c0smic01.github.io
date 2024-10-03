@@ -33,5 +33,11 @@ There are 3 states that a tracked file can be in Git:
 ## What is gitignore?
 `.gitignore` file is used to specify files and directories that should be ignored by Git. It is useful when you have files that you don't want to commit to the repository.
 
+# Section 3: Remote Repo: Github
+## Git commands
+- `git remote`: List all remote repositories.
+- `git remote add origin <url>`: Add a remote repository.
+- `git push <remote repo's name> <branch>`: Push changes to a designated branch in a remote repository.
 
+# Section 5: Branch Management and Pull Requests
 

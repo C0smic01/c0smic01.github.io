@@ -40,4 +40,11 @@ There are 3 states that a tracked file can be in Git:
 - `git push <remote repo's name> <branch>`: Push changes to a designated branch in a remote repository.
 
 # Section 5: Branch Management and Pull Requests
+## Git commands
+- `git branch`: List all branches.
+- `git branch -d <branch name>`: Delete a branch.
+- `git checkout -b <branch name>`: Create a new branch and switch to it.
+
+## What is a pull request?
+A pull request is a feature that allows you to notify other developers about changes that you've pushed to a repository. It allows them to review the changes and discuss potential modifications before the changes are merged into the repository.
 

@@ -48,3 +48,21 @@ There are 3 states that a tracked file can be in Git:
 ## What is a pull request?
 A pull request is a feature that allows you to notify other developers about changes that you've pushed to a repository. It allows them to review the changes and discuss potential modifications before the changes are merged into the repository.
 
+# Section 6: Merge Conflicts
+## What is a merge conflict?
+A merge conflict occurs when two branches have changed the same part of the same file, and then those branches are merged together. Git cannot automatically determine which changes to keep, so it requires human intervention to resolve the conflict.
+
+## How to resolve a merge conflict?
+There are 2 ways to resolve a merge conflict:
+1. **Manual resolution**: You can manually edit the conflicting files to resolve the conflict by `git pull`, modify the conflicting files, and then `git add` and `git commit` the changes.
+2. WIP
+
+# Section 7: Git History Management
+![alt text](/assets/img/A-Fresh-Start-With-Git/git-merge-vs-rebase.png)
+## `git rebase` vs `git pull --rebase`
+- `git rebase`: move or "replay" local commits on top of another base commit. Instead of merging branches, it rewrites the commit history to make it appear as if changes were made after the updates from the remote branch.
+- `git pull --rebase`: fetch the changes from the remote repository and rebase the current branch on top of the fetched changes.
+However, when using rebase-related commands, it is important to note that it rewrites the commit history, which can cause problems when trying to push the changes to a remote repository.
+## `git push -f` vs `git push --force-with-lease`
+- `git push -f`: force push the changes to the remote repository. It will overwrite the remote branch with the local branch. (not recommended)
+- `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the remote branch is in the same state as the local branch. It is a safer alternative to `git push -f`.

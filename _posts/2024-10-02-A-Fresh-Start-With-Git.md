@@ -63,6 +63,7 @@ There are 2 ways to resolve a merge conflict:
 - `git rebase`: move or "replay" local commits on top of another base commit. Instead of merging branches, it rewrites the commit history to make it appear as if changes were made after the updates from the remote branch.
 - `git pull --rebase`: fetch the changes from the remote repository and rebase the current branch on top of the fetched changes.
 However, when using rebase-related commands, it is important to note that it rewrites the commit history, which can cause problems when trying to push the changes to a remote repository.
+
 ## `git push -f` vs `git push --force-with-lease`
 - `git push -f`: force push the changes to the remote repository. It will overwrite the remote branch with the local branch. (not recommended)
 - `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the remote branch is in the same state as the local branch. It is a safer alternative to `git push -f`.

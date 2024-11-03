@@ -74,6 +74,9 @@ Interactive rebase allows you to modify the commit history by squashing, reorder
 
 ## `git reset <commit checksum>`
 ![alt text](/assets/img/A-Fresh-Start-With-Git/git-reset.jpeg)
-git reset is used to reset the current HEAD to the specified state. It can be used to undo changes, unstage files, or move the HEAD to a different commit.
+
+- git reset is used to reset the current HEAD to the specified state. It can be used to undo changes, unstage files, or move the HEAD to a different commit.
 However, git revert is a safer alternative to git reset because it creates a new commit that undoes the changes made in the specified commit, while git reset modifies the commit history.
-Apparently git reset usually goes hand in hand with `git push --force-with-lease` to update the remote repository with the changes.
+- Apparently git reset usually goes hand in hand with `git push --force-with-lease` to update the remote repository with the changes.
+
+# Section 8: Git Stash

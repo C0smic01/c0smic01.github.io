@@ -6,7 +6,7 @@ tags: [git]
 image: /assets/img/A-Fresh-Start-With-Git/git.png
 ---
 
-About 2 weeks ago, the lecturer of CSC14003 (Introduction to AI) gave us a choice to learn courses from Udemy, Coursera, or any other online learning platform to get that juicy extra credit *chef kiss*. Coincidentally, I have a Git course from Udemy that I got for free a while back, and Git is something that I've been wanting to learn more about. Killing two birds with one stone type of situation, I guess. Ofc, a proof of some sort is required to get the credit and writing a blog post is one of the options. So here I am, writing this blog post to get that extra credit. Without further ado, let's get started.
+About 2 weeks ago, the lecturer of CSC14003 (Fundamentals of AI) gave us a choice to learn courses from Udemy, Coursera, or any other online learning platform to get that juicy extra credit *chef kiss*. Coincidentally, I have a Git course from Udemy that I got for free a while back, and Git is something that I've been wanting to learn more about. Killing two birds with one stone type of situation, I guess. Ofc, a proof of some sort is required to get the credit and writing a blog post is one of the options. So here I am, writing this blog post to get that extra credit. Without further ado, let's get started.
 
 ## What is Git?
 Git is a distributed version control system that is used to track changes in source code during software development. It is designed to handle everything from small to very large projects with speed and efficiency.
@@ -75,8 +75,22 @@ Interactive rebase allows you to modify the commit history by squashing, reorder
 ## `git reset <commit checksum>`
 ![alt text](/assets/img/A-Fresh-Start-With-Git/git-reset.jpeg)
 
-- git reset is used to reset the current HEAD to the specified state. It can be used to undo changes, unstage files, or move the HEAD to a different commit.
-However, git revert is a safer alternative to git reset because it creates a new commit that undoes the changes made in the specified commit, while git reset modifies the commit history.
-- Apparently git reset usually goes hand in hand with `git push --force-with-lease` to update the remote repository with the changes.
+- `git reset` is used to reset the current HEAD to the specified state. It can be used to undo changes, unstage files, or move the HEAD to a different commit.
+However, `git revert` is a safer alternative to git reset because it creates a new commit that undoes the changes made in the specified commit, while `git reset` modifies the commit history.
+- Apparently `git reset` usually goes hand in hand with `git push --force-with-lease` to update the remote repository with the changes.
 
 # Section 8: Git Stash
+## What is git stash?
+`git stash` is a command that allows you to save changes that are not ready to be committed yet. It is useful when you need to switch branches or work on a different task without committing the changes.
+
+For now, I think `git branch` is more than enough for me to manage my work. I'll come back to this section when I need to use `git stash`.
+
+# Section 9: Restoring Lost Snapshots
+## What is `git reflog`?
+`git reflog` is a reference log that records changes to the HEAD of the repository. It is useful for recovering lost commits or branches that have been deleted.
+
+## How to recover lost commits?
+- `git reflog` to find the commit checksum (or git log -g for a more detailed view). Filter options can be found on the internet.
+- `git checkout <new branch name> <commit checksum>` to recover the lost commit to a new branch. Or `git reset --hard <commit-hash>` to recover the lost commit to the current branch (Warning: this will overwrite the current branch), or `git cherry-pick <commit-hash>` ???
+
+# Section 10: Moving Commits Between Branches

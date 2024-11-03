@@ -69,6 +69,6 @@ However, when using rebase-related commands, it is important to note that it rew
 - `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the remote branch is in the same state as the local branch. It is a safer alternative to `git push -f`.
 
 ## `git rebase -i <commit id>`: Interactive rebase
-Interactive rebase allows you to modify the commit history by squashing, reordering, or editing commits before pushing them to the remote repository.
+Interactive rebase allows you to modify the commit history by squashing, reordering, or editing commits before pushing them to the remote repository. (In my humble opinion, this is really handy).
 
 # Conclusion

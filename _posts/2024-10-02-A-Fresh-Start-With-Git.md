@@ -24,10 +24,10 @@ There are 3 states that a tracked file can be in Git:
 ## Git commands
 - `git init`: Initialize a new Git repository.
 - `git add <filename>`: Add a file to the staging area.
-- `git commit -m \<message\>`: Commit changes to the repository.
+- `git commit -m <message>`: Commit changes to the repository.
 - `git status`: Show the working tree status.
 - `git log`: Show the commit logs.
-- `git rm --cached \<filename\>`: Remove a file from the staging area but keep it in the working directory.
+- `git rm --cached <filename>`: Remove a file from the staging area but keep it in the working directory.
 - `git commit --amend`: Modify the last commit (potentially dangerous if the commit has been pushed to a remote repository).
 
 ## What is gitignore?
@@ -42,8 +42,8 @@ There are 3 states that a tracked file can be in Git:
 # Section 5: Branch Management and Pull Requests
 ## Git commands
 - `git branch`: List all branches.
-- `git branch -d <branch name>`: Delete a branch.
-- `git checkout -b <branch name>`: Create a new branch and switch to it.
+- `git branch -d <branch_name>`: Delete a branch.
+- `git checkout -b <branch_name>`: Create a new branch and switch to it.
 
 ## What is a pull request?
 A pull request is a feature that allows you to notify other developers about changes that you've pushed to a repository. It allows them to review the changes and discuss potential modifications before the changes are merged into the repository.
@@ -69,10 +69,10 @@ However, when using rebase-related commands, it is important to note that it rew
 - `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the base commit in remote repo where my commit diverted from is not changed. It is a safer alternative to `git push -f`.
 - `git push`: push the changes to the remote repository. It will fail if the remote branch has changes that are not in the local branch (different commit history).
 
-## `git rebase -i <commit checksum>`
+## `git rebase -i <commit_checksum>`
 Interactive rebase allows you to modify the commit history by squashing, reordering, or editing commits before pushing them to the remote repository. (In my humble opinion, this is really handy).
 
-## `git reset <commit checksum>`
+## `git reset <commit_checksum>`
 ![alt text](/assets/img/A-Fresh-Start-With-Git/git-reset.jpeg)
 
 - `git reset` is used to reset the current HEAD to the specified state. It can be used to undo changes, unstage files, or move the HEAD to a different commit.
@@ -96,3 +96,8 @@ For now, I think `git branch` is more than enough for me to manage my work. I'll
 # Section 10: Moving Commits Between Branches
 ## What is `git cherry-pick`?
 `git cherry-pick` is a command that allows you to copy a commit from one branch and apply it to another branch. It is useful when you want to move a specific commit to another branch without merging the entire branch. For example, if the backend team has made a commit that you want to apply to the frontend branch, you can use `git cherry-pick` to copy the commit to the frontend branch.
+
+## How to use `git cherry-pick`?
+- `git checkout <branch_name>` to switch to the branch where you want to apply the commit.
+- `git cherry-pick <commit_hash>` to copy the commit to the current branch.
++ If there are conflicts, resolve them manually, run `git add <file_with_conflicts>` and then `git cherry-pick --continue` to continue the cherry-pick process.

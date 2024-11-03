@@ -67,7 +67,7 @@ However, when using rebase-related commands, it is important to note that it rew
 ## `git push -f` vs `git push --force-with-lease` vs `git push`
 - `git push -f`: force push the changes to the remote repository. It will overwrite the remote branch with the local branch. (not recommended)
 - `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the base commit in remote repo where my commit diverted from is not changed. It is a safer alternative to `git push -f`.
-- `git push`: push the changes to the remote repository. It will fail if the remote branch has changes that are not in the local branch.
+- `git push`: push the changes to the remote repository. It will fail if the remote branch has changes that are not in the local branch (different commit history).
 
 ## `git rebase -i <commit checksum>`
 Interactive rebase allows you to modify the commit history by squashing, reordering, or editing commits before pushing them to the remote repository. (In my humble opinion, this is really handy).
@@ -94,3 +94,5 @@ For now, I think `git branch` is more than enough for me to manage my work. I'll
 - `git checkout <new branch name> <commit checksum>` to recover the lost commit to a new branch. Or `git reset --hard <commit-hash>` to recover the lost commit to the current branch (Warning: this will overwrite the current branch), or `git cherry-pick <commit-hash>` ???
 
 # Section 10: Moving Commits Between Branches
+## What is `git cherry-pick`?
+`git cherry-pick` is a command that allows you to copy a commit from one branch and apply it to another branch. It is useful when you want to move a specific commit to another branch without merging the entire branch. For example, if the backend team has made a commit that you want to apply to the frontend branch, you can use `git cherry-pick` to copy the commit to the frontend branch.

@@ -70,3 +70,5 @@ However, when using rebase-related commands, it is important to note that it rew
 
 ## `git rebase -i <commit id>`: Interactive rebase
 Interactive rebase allows you to modify the commit history by squashing, reordering, or editing commits before pushing them to the remote repository.
+
+# Conclusion

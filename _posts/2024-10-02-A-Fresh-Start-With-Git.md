@@ -67,3 +67,5 @@ However, when using rebase-related commands, it is important to note that it rew
 ## `git push -f` vs `git push --force-with-lease`
 - `git push -f`: force push the changes to the remote repository. It will overwrite the remote branch with the local branch. (not recommended)
 - `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the remote branch is in the same state as the local branch. It is a safer alternative to `git push -f`.
+
+## `git rebase -i <commit id>`: Interactive rebase

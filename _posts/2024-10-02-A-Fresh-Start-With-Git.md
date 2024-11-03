@@ -64,9 +64,10 @@ There are 2 ways to resolve a merge conflict:
 - `git pull --rebase`: fetch the changes from the remote repository and rebase the current branch on top of the fetched changes.
 However, when using rebase-related commands, it is important to note that it rewrites the commit history, which can cause problems when trying to push the changes to a remote repository.
 
-## `git push -f` vs `git push --force-with-lease`
+## `git push -f` vs `git push --force-with-lease` vs `git push`
 - `git push -f`: force push the changes to the remote repository. It will overwrite the remote branch with the local branch. (not recommended)
-- `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the remote branch is in the same state as the local branch. It is a safer alternative to `git push -f`.
+- `git push --force-with-lease`: force push the changes to the remote repository, but it will only succeed if the base commit in remote repo where my commit diverted from is not changed. It is a safer alternative to `git push -f`.
+- `git push`: push the changes to the remote repository. It will fail if the remote branch has changes that are not in the local branch.
 
 ## `git rebase -i <commit checksum>`
 Interactive rebase allows you to modify the commit history by squashing, reordering, or editing commits before pushing them to the remote repository. (In my humble opinion, this is really handy).
@@ -75,5 +76,4 @@ Interactive rebase allows you to modify the commit history by squashing, reorder
 ![alt text](/assets/img/A-Fresh-Start-With-Git/git-reset.jpeg)
 git reset is used to reset the current HEAD to the specified state. It can be used to undo changes, unstage files, or move the HEAD to a different commit.
 However, git revert is a safer alternative to git reset because it creates a new commit that undoes the changes made in the specified commit, while git reset modifies the commit history.
-
-fannlkf
+Apparently git reset usually goes hand in hand with `git push --force-with-lease` to update the remote repository with the changes.

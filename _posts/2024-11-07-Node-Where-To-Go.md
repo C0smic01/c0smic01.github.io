@@ -6,4 +6,3 @@ tags: [nodejs, expressjs]
 image: /assets/img/Node-Where-To-Go/banner.png
 ---
 
-Remember the 

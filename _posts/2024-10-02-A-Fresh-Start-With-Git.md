@@ -101,3 +101,9 @@ For now, I think `git branch` is more than enough for me to manage my work. I'll
 - `git checkout <branch_name>` to switch to the branch where you want to apply the commit.
 - `git cherry-pick <commit_hash>` to copy the commit to the current branch.
 + If there are conflicts, resolve them manually, run `git add <file_with_conflicts>` and then `git cherry-pick --continue` to continue the cherry-pick process.
+
+# Section 11: Cloning Existing Repository
+`git clone` <url>: Clone an existing repository from a remote server to your local machine.
+If you are expecting something big to end the blog, the cherry on top of the cake, I'm sorry to disappoint you lol. I hope you find this blog post helpful. Thank you for reading! 
+
+![alt text](/assets/vid/fy.gif)
